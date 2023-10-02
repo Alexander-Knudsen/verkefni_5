@@ -265,7 +265,7 @@ img {
 }
 
 
-/* Default box behavior (for smallest screens) */
+
 .boxes {
   width: 100%;
   display: grid;
@@ -274,25 +274,25 @@ img {
 }
 
 .box {
-  grid-column: span 12;  /* Takes full width */
+  grid-column: span 12; 
   margin:auto;
 }
 
-/* At 450px, each box takes full width */
+
 @media (max-width: 450px) {
   .box {
       grid-column: span 12;
   }
 }
 
-/* At 1000px, each box takes half the width (6 columns) */
+
 @media (min-width: 1000px) {
   .boxes {
       grid-column: span 6;
   }
 }
 
-/* At 1500px, each box takes one-third of the width (4 columns) */
+
 @media (min-width: 1500px) {
   .box {
       grid-column: span 4;
